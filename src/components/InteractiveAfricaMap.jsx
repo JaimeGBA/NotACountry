@@ -95,7 +95,7 @@ const InteractiveAfricaMap = ({
         transition={{ duration: 0.8 }}
       >
         <img 
-          src="/images/africa-map.png" 
+          src="/images/africa-map.jpg" 
           alt="Africa Map" 
           className="w-full h-auto"
         />
