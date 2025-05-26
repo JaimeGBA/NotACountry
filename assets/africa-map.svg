@@ -1,0 +1,258 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for artistic effect -->
+    <linearGradient id="westGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#CD853F;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="centralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2F4F4F;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#708090;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="eastGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="southernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4B0082;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#9370DB;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="northGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8860B;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Hover effects -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- North Africa -->
+  <path id="north-africa" 
+        class="region" 
+        data-region="north" 
+        data-artist="Zineb Sedira"
+        data-country="Algeria, France, UK"
+        fill="url(#northGradient)" 
+        stroke="#2C1810" 
+        stroke-width="2"
+        d="M 100 80 
+           L 700 80 
+           L 720 120 
+           L 680 180 
+           L 620 200 
+           L 580 220 
+           L 520 240 
+           L 460 250 
+           L 400 260 
+           L 340 250 
+           L 280 240 
+           L 220 220 
+           L 180 200 
+           L 140 180 
+           L 120 140 
+           Z">
+    <title>North Africa - Zineb Sedira (Algeria, France, UK)</title>
+  </path>
+  
+  <!-- West Africa -->
+  <path id="west-africa" 
+        class="region" 
+        data-region="west" 
+        data-artist="El Anatsui"
+        data-country="Ghana, Nigeria"
+        fill="url(#westGradient)" 
+        stroke="#2C1810" 
+        stroke-width="2"
+        d="M 120 140 
+           L 180 200 
+           L 220 220 
+           L 280 240 
+           L 340 250 
+           L 360 280 
+           L 380 320 
+           L 390 360 
+           L 380 400 
+           L 360 440 
+           L 340 480 
+           L 300 520 
+           L 260 540 
+           L 220 520 
+           L 180 480 
+           L 160 440 
+           L 150 400 
+           L 140 360 
+           L 130 320 
+           L 120 280 
+           L 110 240 
+           L 115 200 
+           Z">
+    <title>West Africa - El Anatsui (Ghana, Nigeria)</title>
+  </path>
+  
+  <!-- Central Africa -->
+  <path id="central-africa" 
+        class="region" 
+        data-region="central" 
+        data-artist="Sammy Baloji"
+        data-country="Democratic Republic of Congo"
+        fill="url(#centralGradient)" 
+        stroke="#2C1810" 
+        stroke-width="2"
+        d="M 340 250 
+           L 400 260 
+           L 460 250 
+           L 520 240 
+           L 540 280 
+           L 560 320 
+           L 580 360 
+           L 590 400 
+           L 580 440 
+           L 560 480 
+           L 540 520 
+           L 520 540 
+           L 480 550 
+           L 440 540 
+           L 400 530 
+           L 360 520 
+           L 340 480 
+           L 360 440 
+           L 380 400 
+           L 390 360 
+           L 380 320 
+           L 360 280 
+           Z">
+    <title>Central Africa - Sammy Baloji (Democratic Republic of Congo)</title>
+  </path>
+  
+  <!-- East Africa -->
+  <path id="east-africa" 
+        class="region" 
+        data-region="east" 
+        data-artist="Peterson Kamwathi"
+        data-country="Kenya"
+        fill="url(#eastGradient)" 
+        stroke="#2C1810" 
+        stroke-width="2"
+        d="M 520 240 
+           L 580 220 
+           L 620 200 
+           L 680 180 
+           L 720 120 
+           L 740 160 
+           L 750 200 
+           L 760 240 
+           L 750 280 
+           L 740 320 
+           L 730 360 
+           L 720 400 
+           L 710 440 
+           L 690 480 
+           L 670 520 
+           L 640 540 
+           L 600 550 
+           L 560 540 
+           L 540 520 
+           L 560 480 
+           L 580 440 
+           L 590 400 
+           L 580 360 
+           L 560 320 
+           L 540 280 
+           Z">
+    <title>East Africa - Peterson Kamwathi (Kenya)</title>
+  </path>
+  
+  <!-- Southern Africa -->
+  <path id="southern-africa" 
+        class="region" 
+        data-region="southern" 
+        data-artist="Nicholas Hlobo"
+        data-country="South Africa"
+        fill="url(#southernGradient)" 
+        stroke="#2C1810" 
+        stroke-width="2"
+        d="M 300 520 
+           L 340 480 
+           L 360 520 
+           L 400 530 
+           L 440 540 
+           L 480 550 
+           L 520 540 
+           L 540 520 
+           L 560 540 
+           L 600 550 
+           L 640 540 
+           L 620 580 
+           L 600 620 
+           L 580 660 
+           L 540 680 
+           L 500 690 
+           L 460 680 
+           L 420 670 
+           L 380 660 
+           L 340 640 
+           L 320 600 
+           L 310 560 
+           Z">
+    <title>Southern Africa - Nicholas Hlobo (South Africa)</title>
+  </path>
+  
+  <!-- Artist markers/dots for visual reference -->
+  <circle id="north-marker" cx="460" cy="180" r="8" fill="#FFD700" stroke="#2C1810" stroke-width="2" opacity="0.9">
+    <title>Zineb Sedira</title>
+  </circle>
+  
+  <circle id="west-marker" cx="250" cy="350" r="8" fill="#FFD700" stroke="#2C1810" stroke-width="2" opacity="0.9">
+    <title>El Anatsui</title>
+  </circle>
+  
+  <circle id="central-marker" cx="450" cy="400" r="8" fill="#FFD700" stroke="#2C1810" stroke-width="2" opacity="0.9">
+    <title>Sammy Baloji</title>
+  </circle>
+  
+  <circle id="east-marker" cx="650" cy="350" r="8" fill="#FFD700" stroke="#2C1810" stroke-width="2" opacity="0.9">
+    <title>Peterson Kamwathi</title>
+  </circle>
+  
+  <circle id="southern-marker" cx="480" cy="600" r="8" fill="#FFD700" stroke="#2C1810" stroke-width="2" opacity="0.9">
+    <title>Nicholas Hlobo</title>
+  </circle>
+  
+  <!-- CSS for interactivity -->
+  <style>
+    .region {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .region:hover {
+      filter: url(#glow);
+      opacity: 0.8;
+      transform-origin: center;
+    }
+    
+    .region:active {
+      transform: scale(1.02);
+    }
+    
+    circle {
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    circle:hover {
+      r: 12;
+      filter: url(#glow);
+    }
+  </style>
+</svg> 

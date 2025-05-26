@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-metal-800 bg-earth-50 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-earth-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-earth-400 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-earth-500;
+  }
+}
+
+@layer components {
+  /* Interactive Region Styles */
+  .region-hover {
+    @apply transition-all duration-300 ease-in-out transform;
+  }
+  
+  .region-hover:hover {
+    @apply scale-105 opacity-90 shadow-xl;
+  }
+  
+  /* Modal Styles */
+  .modal-backdrop {
+    @apply fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4;
+  }
+  
+  .modal-content {
+    @apply bg-white rounded-xl shadow-2xl max-w-2xl max-h-[90vh] overflow-y-auto;
+  }
+  
+  /* Interactive Hotspot */
+  .hotspot {
+    @apply absolute w-6 h-6 bg-gold-400 rounded-full border-2 border-white shadow-lg cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:scale-125 hover:bg-gold-500;
+  }
+  
+  /* Video Player Styles */
+  .video-container {
+    @apply relative w-full h-0 pb-[56.25%]; /* 16:9 aspect ratio */
+  }
+  
+  .video-container video {
+    @apply absolute top-0 left-0 w-full h-full object-cover rounded-lg;
+  }
+  
+  /* Interactive Drawing Canvas */
+  .drawing-canvas {
+    @apply border-2 border-earth-300 rounded-lg shadow-inner bg-earth-50;
+  }
+  
+  /* Philosophical Zone Styles */
+  .philosophy-card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-earth-200 hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  /* Loading Spinner */
+  .spinner {
+    @apply animate-spin rounded-full h-12 w-12 border-b-2 border-earth-500;
+  }
+}
+
+@layer utilities {
+  /* Text Gradients */
+  .text-gradient-earth {
+    background: linear-gradient(135deg, #8B4513 0%, #CD853F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-metal {
+    background: linear-gradient(135deg, #495057 0%, #ADB5BD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Interactive Elements */
+  .interactive-element {
+    @apply cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+  
+  /* Focus States for Accessibility */
+  .focus-visible {
+    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-earth-50;
+  }
+}
